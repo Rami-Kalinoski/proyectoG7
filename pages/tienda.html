@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- KEYWORDS -->
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../img/logo_arbore.png" type="image/x-icon">
+    <!-- GOOGLE FONTS -->
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Arbore | Tienda</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../index.html">
+                <h1>ARBORE</h1>
+            </a>
+        </div>
+        <div>
+            <a href="../index.html">
+                <img src="../img/logo_arbore.png" alt="Logo de Arbore" class="logo-header">
+            </a>
+        </div>
+    </header>
+    <nav>
+        <ul class="ul-nav">
+            <li>
+                <a href="./tienda.html" class="nav-link">Tienda</a>
+            </li>
+            <li>
+                <a href="./acercade.html" class="nav-link">Acerca De</a>
+            </li>
+            <li>
+                <a href="./contacto.html" class="nav-link">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+
+        <!-------------------------------------------MAPA SUPERIOR------------------------------------------->
+
+        <section class="tienda_up-section">
+            <article>
+                <p>
+                    <a href="../index.html" class="mapa-link">Inicio</a> > <a href="./tienda.html" class="mapa-link">Tienda</a>
+                </p>
+            </article>
+            <article class="carrito_article">
+                <img src="../img/carrito.png" alt="Imagen del Carrito" class="carrito">
+            </article>
+        </section>
+        <section class="tienda_main-section">
+
+            <!-------------------------------------------FILTROS------------------------------------------->
+<!-- 
+            <article class="tienda_filtros_article">
+                <div class="filtro1_container">
+                    <div class="filtro_h6_container">
+                        <h6 class="filtro-h6">Categoría</h6>
+                    </div>
+                    <div>
+                        <ul class="filtro1_ul">
+                            <li>
+                                <input type="checkbox" checked id="todas" value="todas" class="checkbox"><label for="todas" class="filtro_label">Todas</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="remeras" value="remeras" class="checkbox"><label for="remeras" class="filtro_label">Remeras</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="buzos" value="buzos" class="checkbox"><label for="buzos" class="filtro_label">Buzos</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="pantalones" value="pantalones" class="checkbox"><label for="pantalones" class="filtro_label">Pantalones</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="gorras" value="gorras" class="checkbox"><label for="gorras" class="filtro_label">Gorras</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filtro2_container">
+                    <div>
+                        <h6 class="filtro-h6">Color</h6>
+                    </div>
+                    <div class="colores_container">
+                        <div class="color color_rojo"></div>
+                        <div class="color color_azul"></div>
+                        <div class="color color_beige"></div>
+                        <div class="color color_rosa"></div>
+                        <div class="color color_gris"></div>
+                        <div class="color color_negro"></div>
+                    </div>
+                </div>
+                <div class="filtro3_container">
+                    <div class="filtro_h6_container">
+                        <h6 class="filtro-h6">Tamaño / Talle</h6>
+                    </div>
+                    <div>
+                        <ul class="filtro3_ul">
+                            <li>
+                                <input type="checkbox" checked id="todas_talle" value="todas_talle" class="checkbox"><label for="todas_talle" class="filtro_label">Todas</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="XS" value="XS" class="checkbox"><label for="XS" class="filtro_label">XS</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="S" value="S" class="checkbox"><label for="S" class="filtro_label">S</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="M" value="M" class="checkbox"><label for="M" class="filtro_label">M</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="M" value="M" class="checkbox"><label for="M" class="filtro_label">M</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="L" value="L" class="checkbox"><label for="L" class="filtro_label">L</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="XL" value="XL" class="checkbox"><label for="XL" class="filtro_label">XL</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article> -->
+
+            <!-------------------------------------------PRODUCTOS------------------------------------------->
+
+            <article class="tienda_productos_article">
+                <div class="tienda-h2_container">
+                    <h2>Nuestros Productos</h2>
+                </div>        
+                <div class="tienda_productos_div1-3">
+                    <div class="tienda_producto_container">
+                        <div>
+                            <div class="product-img_container">
+                                <div id="carousel_remera-denim" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/products/remera_denim-bordo1.jpeg" class="d-block w-100" alt="Remera Denim Brand Roja por delante" class="product_img">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/products/remera_denim-bordo2.jpeg" class="d-block w-100" alt="Remera Denim Brand Roja por detrás" class="product_img">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_remera-denim" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_remera-denim" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="Remera_Denim" class="product_name">Remera "Denim Brand" Roja</label>
+                        </div>
+                        <div>
+                            <h5 class="product_price">$10.000</h5>
+                        </div>
+                        <div class="carrito-button_container">
+                            <button class="carrito-button" id="Remera_Denim">
+                                <p class="carrito-button_text">Agregar al Carrito</p>
+                            </button>
+                            <div class="cantidad_container" id="mostrar_Remera_Denim">
+                                <label for="cant_Remera_Denim" class="cantidad_label">Cantidad:</label>
+                                <select class="select_options" id="cant_Remera_Denim">
+                                    <option value="1" class="number_option">1</option>
+                                    <option value="2" class="number_option">2</option>
+                                    <option value="3" class="number_option">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tienda_producto_container">
+                        <div>
+                            <div class="product-img_container">
+                                <div id="carousel_remera-polo" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/products/remera_polo-azul1.jpeg" class="d-block w-100" alt="Remera Polo Azul por delante" class="product_img">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/products/remera_polo-azul2.jpeg" class="d-block w-100" alt="Remera Polo Azul por detrás" class="product_img">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_remera-polo" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_remera-polo" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="Remera_Polo" class="product_name">Remera Polo Azul</label>
+                        </div>
+                        <div>
+                            <h5 class="product_price">$13.000</h5>
+                        </div>
+                        <div class="carrito-button_container">
+                            <button class="carrito-button" id="Remera_Polo">
+                                <p class="carrito-button_text">Agregar al Carrito</p>
+                            </button>
+                            <div class="cantidad_container" id="mostrar_Remera_Polo">
+                                <label for="cant_Remera_Polo" class="cantidad_label">Cantidad:</label>
+                                <select class="select_options" id="cant_Remera_Polo">
+                                    <option value="1" class="number_option">1</option>
+                                    <option value="2" class="number_option">2</option>
+                                    <option value="3" class="number_option">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tienda_producto_container">
+                        <div>
+                            <div class="product-img_container">
+                                <div id="carousel_quick-negra" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/products/remera_quick-negra1.jpeg" class="d-block w-100" alt="Remera Quicksilver Negra por delante" class="product_img">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/products/remera_quick-negra2.jpeg" class="d-block w-100" alt="Remera Quicksilver Negra por detrás" class="product_img">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_quick-negra" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_quick-negra" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="Remera_Quick" class="product_name">Remera "Quicksilver" Negra</label>
+                        </div>
+                        <div>
+                            <h5 class="product_price">$10.000</h5>
+                        </div>
+                        <div class="carrito-button_container">
+                            <button class="carrito-button" id="Remera_Quick">
+                                <p class="carrito-button_text">Agregar al Carrito</p>
+                            </button>
+                            <div class="cantidad_container" id="mostrar_Remera_Quick">
+                                <label for="cant_Remera_Quick" class="cantidad_label">Cantidad:</label>
+                                <select class="select_options" id="cant_Remera_Quick">
+                                    <option value="1" class="number_option">1</option>
+                                    <option value="2" class="number_option">2</option>
+                                    <option value="3" class="number_option">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tienda_productos_div1-3">
+                    <div class="tienda_producto_container">
+                        <div>
+                            <div class="product-img_container">
+                                <div id="carousel_adidas-azul" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/products/remera_adidas-azul1.jpeg" class="d-block w-100" alt="Remera Adidas Azul Roja por delante" class="product_img">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/products/remera_adidas-azul2.jpeg" class="d-block w-100" alt="Remera Adidas Azul por detrás" class="product_img">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_adidas-azul" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_adidas-azul" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="Remera_Adidas" class="product_name">Remera "Adidas" Azul</label>
+                        </div>
+                        <div>
+                            <h5 class="product_price">$15.000</h5>
+                        </div>
+                        <div class="carrito-button_container">
+                            <button class="carrito-button" id="Remera_Adidas">
+                                <p class="carrito-button_text">Agregar al Carrito</p>
+                            </button>
+                            <div class="cantidad_container" id="mostrar_Remera_Adidas">
+                                <label for="cant_Remera_Adidas" class="cantidad_label">Cantidad:</label>
+                                <select class="select_options" id="cant_Remera_Adidas">
+                                    <option value="1" class="number_option">1</option>
+                                    <option value="2" class="number_option">2</option>
+                                    <option value="3" class="number_option">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tienda_producto_container">
+                        <div>
+                            <div class="product-img_container">
+                                <div id="carousel_jean-azul" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/products/pantalon_jean-azul1.jpeg" class="d-block w-100" alt="Pantalón Jean Azul por delante" class="product_img">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/products/pantalon_jean-azul2.jpeg" class="d-block w-100" alt="Pantalón Jean Azul por detrás" class="product_img">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_jean-azul" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_jean-azul" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="Pantalon_Jean1" class="product_name">Pantalón de Jean Azul</label>
+                        </div>
+                        <div>
+                            <h5 class="product_price">$17.000</h5>
+                        </div>
+                        <div class="carrito-button_container">
+                            <button class="carrito-button" id="Pantalon_Jean1">
+                                <p class="carrito-button_text">Agregar al Carrito</p>
+                            </button>
+                            <div class="cantidad_container" id="mostrar_Pantalon_Jean1">
+                                <label for="cant_Pantalon_Jean1" class="cantidad_label">Cantidad:</label>
+                                <select class="select_options" id="cant_Pantalon_Jean1">
+                                    <option value="1" class="number_option">1</option>
+                                    <option value="2" class="number_option">2</option>
+                                    <option value="3" class="number_option">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tienda_producto_container">
+                        <div>
+                            <div class="product-img_container">
+                                <div id="carousel_jogger-beige" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/products/pantalon_jogger-beige1.jpeg" class="d-block w-100" alt="Pantalón Jogger Beige por delante" class="product_img">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/products/pantalon_jogger-beige2.jpeg" class="d-block w-100" alt="Pantalón Jogger Beige por detrás" class="product_img">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_jogger-beige" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_jogger-beige" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="Pantalon_Jean2" class="product_name">Pantalon Jogger Beige</label>
+                        </div>
+                        <div>
+                            <h5 class="product_price">$16.000</h5>
+                        </div>
+                        <div class="carrito-button_container">
+                            <button class="carrito-button" id="Pantalon_Jean2">
+                                <p class="carrito-button_text">Agregar al Carrito</p>
+                            </button>
+                            <div class="cantidad_container" id="mostrar_Pantalon_Jean2">
+                                <label for="cant_Pantalon_Jean2" class="cantidad_label">Cantidad:</label>
+                                <select class="select_options" id="cant_Pantalon_Jean2">
+                                    <option value="1" class="number_option">1</option>
+                                    <option value="2" class="number_option">2</option>
+                                    <option value="3" class="number_option">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tienda_productos_div1-3">
+                    <div class="tienda_producto_container">
+                        <div>
+                            <div class="product-img_container">
+                                <div id="carousel_jean-bordo" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/products/pantalon_jean-bordo1.jpeg" class="d-block w-100" alt="Pantalón de Jean Bordó por delante" class="product_img">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/products/pantalon_jean-bordo2.jpeg" class="d-block w-100" alt="Pantalón de Jean Bordó por detrás" class="product_img">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_jean-bordo" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_jean-bordo" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="Pantalon_Jean3" class="product_name">Pantalon de Jean Bordó</label>
+                        </div>
+                        <div>
+                            <h5 class="product_price">$10.000</h5>
+                        </div>
+                        <div class="carrito-button_container">
+                            <button class="carrito-button" id="Pantalon_Jean3">
+                                <p class="carrito-button_text">Agregar al Carrito</p>
+                            </button>
+                            <div class="cantidad_container" id="mostrar_Pantalon_Jean3">
+                                <label for="cant_Pantalon_Jean3" class="cantidad_label">Cantidad:</label>
+                                <select class="select_options" id="cant_Pantalon_Jean3">
+                                    <option value="1" class="number_option">1</option>
+                                    <option value="2" class="number_option">2</option>
+                                    <option value="3" class="number_option">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tienda_producto_container">
+                        <div>
+                            <div class="product-img_container">
+                                <div>
+                                    <img src="../img/products/gorro_negro.jpeg" class="d-block w-100" alt="Gorro de Invierno Negro" class="product_img">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="Gorro_Negro" class="product_name">Gorro de Invierno Negro</label>
+                        </div>
+                        <div>
+                            <h5 class="product_price">$5.000</h5>
+                        </div>
+                        <div class="carrito-button_container">
+                            <button class="carrito-button" id="Gorro_Negro">
+                                <p class="carrito-button_text">Agregar al Carrito</p>
+                            </button>
+                            <div class="cantidad_container" id="mostrar_Gorro_Negro">
+                                <label for="cant_Gorro_Negro" class="cantidad_label">Cantidad:</label>
+                                <select class="select_options" id="cant_Gorro_Negro">
+                                    <option value="1" class="number_option">1</option>
+                                    <option value="2" class="number_option">2</option>
+                                    <option value="3" class="number_option">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tienda_producto_container">
+                        <div>
+                            <div class="product-img_container">
+                                <div>
+                                    <img src="../img/products/gorro_rosa.jpeg" class="d-block w-100" alt="Gorro Pura Vida Rosa" class="product_img">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="Gorro_Rosa" class="product_name">Gorro "Pura Vida" Rosa</label>
+                        </div>
+                        <div>
+                            <h5 class="product_price">$5.000</h5>
+                        </div>
+                        <div class="carrito-button_container">
+                            <button class="carrito-button" id="Gorro_Rosa">
+                                <p class="carrito-button_text">Agregar al Carrito</p>
+                            </button>
+                            <div class="cantidad_container" id="mostrar_Gorro_Rosa">
+                                <label for="cant_Gorro_Rosa" class="cantidad_label">Cantidad:</label>
+                                <select class="select_options" id="cant_Gorro_Rosa">
+                                    <option value="1" class="number_option">1</option>
+                                    <option value="2" class="number_option">2</option>
+                                    <option value="3" class="number_option">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tienda_productos_div1-3">
+                    <div class="tienda_producto_container">
+                        <div>
+                            <div class="product-img_container">
+                                <div id="carousel_buzo-rosa" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/products/buzo_rosa1.jpeg" class="d-block w-100" alt="Campera Rosa por delante" class="product_img">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/products/buzo_rosa2.jpeg" class="d-block w-100" alt="Campera Rosa por detrás" class="product_img">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_buzo-rosa" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_buzo-rosa" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="Campera_Rosa" class="product_name">Campera Rosa</label>
+                        </div>
+                        <div>
+                            <h5 class="product_price">$14.000</h5>
+                        </div>
+                        <div class="carrito-button_container">
+                            <button class="carrito-button" id="Campera_Rosa">
+                                <p class="carrito-button_text">Agregar al Carrito</p>
+                            </button>
+                            <div class="cantidad_container" id="mostrar_Campera_Rosa">
+                                <label for="cant_Campera_Rosa" class="cantidad_label">Cantidad:</label>
+                                <select class="select_options" id="cant_Campera_Rosa">
+                                    <option value="1" class="number_option">1</option>
+                                    <option value="2" class="number_option">2</option>
+                                    <option value="3" class="number_option">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tienda_producto_container">
+                        <div>
+                            <div class="product-img_container">
+                                <div id="carousel_buzo_vans-rojo" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/products/buzo_vans-rojo1.jpeg" class="d-block w-100" alt="Buzo Vans Rojo por delante" class="product_img">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/products/buzo_vans-rojo2.jpeg" class="d-block w-100" alt="Buzo Vans Rojo por detrás" class="product_img">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_buzo_vans-rojo" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_buzo_vans-rojo" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="Buzo_Vans" class="product_name">Buzo "Vans" Rojo</label>
+                        </div>
+                        <div>
+                            <h5 class="product_price">$17.000</h5>
+                        </div>
+                        <div class="carrito-button_container">
+                            <button class="carrito-button" id="Buzo_Vans">
+                                <p class="carrito-button_text">Agregar al Carrito</p>
+                            </button>
+                            <div class="cantidad_container" id="mostrar_Buzo_Vans">
+                                <label for="cant_Buzo_Vans" class="cantidad_label">Cantidad:</label>
+                                <select class="select_options" id="cant_Buzo_Vans">
+                                    <option value="1" class="number_option">1</option>
+                                    <option value="2" class="number_option">2</option>
+                                    <option value="3" class="number_option">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tienda_producto_container">
+                        <div>
+                            <div class="product-img_container">
+                                <div id="carousel_buzo_nb-gris" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/products/buzo_nb-gris1.jpeg" class="d-block w-100" alt="Buzo New Balance Gris por delante" class="product_img">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/products/buzo_nb-gris2.jpeg" class="d-block w-100" alt="Buzo New Balance Gris por detrás" class="product_img">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_buzo_nb-gris" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_buzo_nb-gris" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="Buzo_Nb" class="product_name">Buzo "New Balance" Gris</label>
+                        </div>
+                        <div>
+                            <h5 class="product_price">$17.000</h5>
+                        </div>
+                        <div class="carrito-button_container">
+                            <button class="carrito-button" id="Buzo_Nb">
+                                <p class="carrito-button_text">Agregar al Carrito</p>
+                            </button>
+                            <div class="cantidad_container" id="mostrar_Buzo_Nb">
+                                <label for="cant_Buzo_Nb" class="cantidad_label">Cantidad:</label>
+                                <select class="select_options" id="cant_Buzo_Nb">
+                                    <option value="1" class="number_option">1</option>
+                                    <option value="2" class="number_option">2</option>
+                                    <option value="3" class="number_option">3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-------------------------------------------FOOTER------------------------------------------->
+
+    <footer>
+        <section class="footer_section1">
+            <article class="footer-derechos_article">
+                <p>© Derechos Reservados</p>
+            </article>
+            <article>
+                <div>
+                    <a href="https://www.flaticon.es/" target="_blank">
+                        <h6 class="footer-h6">Íconos utilizados de "FLATICON"</h6>
+                    </a>
+                </div>
+                <div class="footer_logos_container">
+                    <div>
+                        <a href="https://www.flaticon.es/iconos-gratis/flecha-hacia-abajo" title="flecha hacia abajo iconos" target="_blank">
+                            <img src="../img/flecha_abajo.png" alt="Flecha señalando abajo" class="footer-icon">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.flaticon.com/free-icons/paulownia" title="paulownia icons" target="_blank">
+                            <img src="../img/logo_arbore.png" alt="Logo de Arbore" class="footer-icon">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.flaticon.com/free-icons/supermarket" title="supermarket icons" target="_blank">
+                            <img src="../img/carrito.png" alt="Imagen del Carrito" class="footer-icon">
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="footer_section2">
+            <article class="footer_article2">
+                <div>
+                    <h6 class="footer-h6">Atención: esto es un trabajo universitario</h6>
+                </div>
+                <div>
+                    <p>Tanto esta página como la información que mostramos en ella son parte de un trabajo universitario de la materia “Diseño y Desrrollo Web” en la Universidad Argentina De la Empresa (UADE). Por lo tanto, tenga en cuenta que <b class="footer-b">este es un proyecto y tienda ficticios</b>.</p>
+                </div>
+            </article>
+        </section>
+    </footer>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- JAVASCRIPT -->
+    <script src="../javascript/codigo.js"></script>
+</body>
+</html>
