@@ -13,53 +13,93 @@ html {
 /* ESTILOS GENERALES */
 main {
     background-color: #F7F4E7;
-    padding-bottom: 15rem;
+    padding: 5rem 10rem 15rem 10rem;
 }
 
 h1 {
     color: #FCFCFC;
     font-size: 6rem;
+    font-family: 'Tilt Prism', cursive;
 }
 
 h2 {
     color: #121212;
     font-size: 4.5rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 h3 {
     color: #121212;
     font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 h6 {
     color: #FCFCFC;
     font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
     font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
     margin: 0rem;
 }
 
 a {
     font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
 
 li {
     list-style: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 0rem 1rem;
 }
 
-.index-button {
+input {
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+.link-button {
+    font-family: 'Roboto', sans-serif;
     background-color: #7AA874;
     border: #50704C solid 2px;
     border-radius: 70px;
     margin: 0rem;
     padding: 1rem 2.5rem 1rem 2.5rem;
+    box-shadow: 0px 5px 10px #121212;
 }
 
-.index-button-link {
+.link-button a {
     color: #FCFCFC;
+    font-family: 'Roboto', sans-serif;
+}
+
+.up-section {
+    background-color: #F7F4E7;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 4.5rem 0rem 0rem;
+}
+
+.mapa-link {
+    color: #121212;
+    padding: 0rem 3rem 0rem 3rem;
+}
+
+.mapa-link:hover {
+    text-decoration: underline #121212 solid 1px;
 }
 
 /* --------------------------------------------------------------------- */
@@ -145,6 +185,18 @@ nav {
     font-size: 3rem;
 }
 
+.nav-link:hover {
+    color: #FCFCFC;
+}
+
+.nav_li:hover {
+    background-color:#50704C;
+}
+
+.actual_link {
+    background-color: #638f5d;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 /* ESTILOS DEL INDEX */
 
@@ -178,7 +230,7 @@ nav {
 
 .index-forest_cont {
     color: #7AA874;
-    /* box-shadow: ; PONELE SHADOW WACHIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIINNNNNNNNNNNNNNNIUsdjbfobf */
+    text-shadow: 0px 5px 10px #121212;
     padding: 3rem 0rem 3rem 0rem;
 }
 
@@ -266,15 +318,15 @@ nav {
 
 /* -----mapa de arriba----- */
 
-.tienda_up-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 3rem 4.5rem 0rem 5rem;
+.carrito_article {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 15px;
+    padding: 1rem;
 }
 
-.mapa-link {
-    color: #121212;
-    padding: 0rem 3rem 0rem 3rem;
+.carrito_article:hover {
+    background-color: #c7c2ad;
 }
 
 .carrito {
@@ -469,6 +521,7 @@ nav {
     border-radius: 70px;
     margin: 0rem;
     padding: 1rem 2.5rem 1rem 2.5rem;
+    box-shadow: 0px 5px 10px #121212;
 }
 
 .carrito-button_text {
@@ -494,4 +547,161 @@ nav {
 
 .number_option {
     font-size: 1.5rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ESTILOS DEL ACERCA DE */
+
+.acercade_section {
+    padding-top: 2.5rem;
+}
+
+.acerca-h2_container {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline #121212 solid 2px;
+    padding: 2.5rem 0rem 5rem 0rem;
+}
+
+.acerca-text1_container1 {
+    padding: 5rem 10rem 1.5rem 10rem;
+}
+
+.acerca-text1_container2 {
+    padding: 1.5rem 10rem 5rem 10rem;
+}
+
+.acerca-text {
+    text-align: justify;
+}
+
+.acerca-text2_container {
+    padding: 0rem 30rem 0rem 30rem;
+}
+
+.acerca-final_container {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0rem 5rem 0rem;
+}
+
+.acerca_flecha {
+    height: 15rem;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ESTILOS DEL CONTACTO */
+
+.contacto_section {
+    display: flex;
+    justify-content: space-between;
+    padding: 15rem 15rem 5rem 15rem ;
+}
+
+.contacto-img {
+    height: 70rem;
+    border: #121212 solid 1px;
+    border-radius: 15px;
+}
+
+.form-title_container {
+    display: flex;
+    justify-content: center;
+}
+
+.form_title {
+    text-decoration: underline #121212 solid 1.5px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5rem 15rem 5rem 5rem;
+}
+
+.form-label {
+    font-size: 3.5rem;
+    text-decoration: underline #121212 solid 1.5px;
+    padding: 2.5rem 0rem 1rem 0rem;
+}
+
+.label_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_input {
+    height: 4rem;
+    width: 70rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.form-buttons_container {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 3rem;
+}
+
+.form_button {
+    color: #FCFCFC;
+    font-size: 1.5rem;
+    background-color: #7AA874;
+    border: #50704C solid 2px;
+    border-radius: 70px;
+    margin: 0rem;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    box-shadow: 0px 5px 10px #121212;
+}
+
+.despliegue {
+    padding: 3rem 0rem;
+}
+
+.unirse_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subform-label {
+    font-size: 3rem;
+    text-decoration: underline #121212 solid 1.5px;
+    padding: 2rem 0rem 1rem 1rem;
+}
+
+.subform_input {
+    width: 75%;
+    font-size: 2rem;
+    padding: 1rem 0rem 1rem 1.5rem;
+}
+
+.productos_ofrece {
+    width: 75%;
+    font-size: 2rem;
+    padding: 1rem 0rem 1rem 1.5rem;
+}
+
+.final-buttons_container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0rem 0rem 0rem;
+}
+
+.final-form_button {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.opinion_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
