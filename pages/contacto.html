@@ -64,15 +64,14 @@
                 <div class="form-title_container">
                     <h2 class="form_title">Formulario</h2>
                 </div>
-                <form action="" class="formulario">
-                    <fieldset>
+                <form id="form" action="" class="formulario">
                         <div class="label_container">
                             <label for="nombre" class="form-label">Nombre y Apellido</label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre y apellido" class="form_input">
+                            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre y apellido" class="form_input" required>
                         </div>
                         <div class="label_container">
                             <label for="email-individual" class="form-label">E-Mail</label>
-                            <input type="email" name="email-individual" id="email-individual" placeholder="Ingrese su e-mail personal" class="form_input">
+                            <input type="email" name="email-individual" id="email-individual" placeholder="Ingrese su e-mail personal" class="form_input" required>
                         </div>
                         <div class="label_container">
                             <label for="motivo" class="form-label">Motivo</label>
@@ -87,15 +86,15 @@
                             <div class="collapse despliegue" id="unirse-collapse">
                                 <div class="card card-body">
                                     <div class="unirse_container">
-                                        <label for="email2-individual" class="subform-label">E-mail</label>
-                                        <input type="email" name="email2-individual" id="email2-individual" placeholder="Ingrese el e-mail que utilizará como vendedor" class="subform_input">
+                                        <label for="email2" class="subform-label">E-mail</label>
+                                        <input type="email" name="email2" id="email2" placeholder="Ingrese el e-mail que utilizará como vendedor" class="subform_input">
                                     </div>
                                     <div class="unirse_container">
                                         <label for="ofrece" class="subform-label">Productos Ofrecidos</label>
-                                        <textarea name="ofrece" id="ofrece" cols="60" rows="20" class="productos_ofrece">Ingrese los tipos de productos que ofrecerá desde nuestro sitio</textarea>
+                                        <textarea name="ofrece" id="ofrece" cols="60" rows="20" class="productos_ofrece" placeholder="Ingrese los tipos de productos que ofrecerá desde nuestro sitio"></textarea>
                                     </div>
                                     <div class="final-buttons_container">
-                                        <button type="submit" class="form_button final-form_button">Enviar</button>
+                                        <button type="submit" class="form_button final-form_button" id="enviado">Enviar</button>
                                         <button type="reset" class="form_button final-form_button">Borrar</button>
                                     </div>
                                 </div>
@@ -104,16 +103,15 @@
                                 <div class="card card-body">                                
                                     <div class="opinion_container">
                                         <label for="opinion" class="subform-label">Tu Opinión</label>
-                                        <textarea name="opinion" id="opinion" cols="60" rows="20" class="subform_input">Ingrese su opinión o sugerencia</textarea>
+                                        <textarea name="opinion" id="opinion" cols="60" rows="20" class="subform_input" placeholder="Ingrese su opinión o sugerencia"></textarea>
                                     </div>
                                     <div class="final-buttons_container">
-                                        <button type="submit" class="form_button final-form_button">Enviar</button>
+                                        <button type="submit" class="form_button final-form_button" id="enviado">Enviar</button>
                                         <button type="reset" class="form_button final-form_button">Borrar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </fieldset>
                 </form>
             </article>
         </section>
@@ -151,6 +149,11 @@
                     <div>
                         <a href="https://www.flaticon.es/iconos-gratis/flecha-hacia-abajo" title="flecha hacia abajo iconos">
                             <img src="../img/flecha_recta.png" alt="Flecha Señalando Abajo Recta" class="footer-icon">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.flaticon.es/iconos-gratis/cerca" title="cerca iconos">
+                            <img src="../img/cerrar.png" alt="Cruz para Cerrar el Carrito" class="footer-icon">
                         </a>
                     </div>
                 </div>

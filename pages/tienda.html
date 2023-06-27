@@ -42,6 +42,40 @@
             </li>
         </ul>
     </nav>
+
+    <!-------------------------------------------SECCIÓN DEL CARRITO------------------------------------------->
+
+    <section class="carrito_section" id="carrito">
+        <article class="cerrarYh3-carrito_container">
+            <div class="h3-carrito_div">
+                <h3>Carrito</h3>
+            </div>
+            <div>
+                <button class="cerrar-carrito_button"  id="cerrar">
+                    <img src="../img/cerrar.png" alt="Botón para Cerrar el Carrito" class="cruz_cerrar-img">
+                </button>
+            </div>
+        </article>
+        <article class="ul-carrito_container">
+            <ul id="carrito-items">
+
+            </ul>
+        </article>
+        <article class="carrito-total_container">
+            <p class="total-p">
+                Total: $ <span id="carrito-total"> 0 </span>
+            </p>
+        </article>
+        <article class="vaciar-carrito_button_container">
+            <button onclick="comprar()" class="comprar-carrito_button">
+                <p>Comprar</p>
+            </button>
+            <button onclick="vaciarCarrito()" class="vaciar-carrito_button">
+                <p>Vaciar carrito</p>
+            </button>
+        </article>
+    </section>
+
     <main>
 
         <!-------------------------------------------MAPA SUPERIOR------------------------------------------->
@@ -52,87 +86,15 @@
                     <a href="../index.html" class="mapa-link">Inicio</a> > <a href="./tienda.html" class="mapa-link">Tienda</a>
                 </p>
             </article>
-            <article class="carrito_article">
+            <button class="carrito_button" id="abrir">
                 <img src="../img/carrito.png" alt="Imagen del Carrito" class="carrito">
-            </article>
+            </button>
         </section>
         <section class="tienda_main-section">
 
-            <!-------------------------------------------FILTROS------------------------------------------->
-<!-- 
-            <article class="tienda_filtros_article">
-                <div class="filtro1_container">
-                    <div class="filtro_h6_container">
-                        <h6 class="filtro-h6">Categoría</h6>
-                    </div>
-                    <div>
-                        <ul class="filtro1_ul">
-                            <li>
-                                <input type="checkbox" checked id="todas" value="todas" class="checkbox"><label for="todas" class="filtro_label">Todas</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="remeras" value="remeras" class="checkbox"><label for="remeras" class="filtro_label">Remeras</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="buzos" value="buzos" class="checkbox"><label for="buzos" class="filtro_label">Buzos</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="pantalones" value="pantalones" class="checkbox"><label for="pantalones" class="filtro_label">Pantalones</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="gorras" value="gorras" class="checkbox"><label for="gorras" class="filtro_label">Gorras</label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="filtro2_container">
-                    <div>
-                        <h6 class="filtro-h6">Color</h6>
-                    </div>
-                    <div class="colores_container">
-                        <div class="color color_rojo"></div>
-                        <div class="color color_azul"></div>
-                        <div class="color color_beige"></div>
-                        <div class="color color_rosa"></div>
-                        <div class="color color_gris"></div>
-                        <div class="color color_negro"></div>
-                    </div>
-                </div>
-                <div class="filtro3_container">
-                    <div class="filtro_h6_container">
-                        <h6 class="filtro-h6">Tamaño / Talle</h6>
-                    </div>
-                    <div>
-                        <ul class="filtro3_ul">
-                            <li>
-                                <input type="checkbox" checked id="todas_talle" value="todas_talle" class="checkbox"><label for="todas_talle" class="filtro_label">Todas</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="XS" value="XS" class="checkbox"><label for="XS" class="filtro_label">XS</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="S" value="S" class="checkbox"><label for="S" class="filtro_label">S</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="M" value="M" class="checkbox"><label for="M" class="filtro_label">M</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="M" value="M" class="checkbox"><label for="M" class="filtro_label">M</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="L" value="L" class="checkbox"><label for="L" class="filtro_label">L</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="XL" value="XL" class="checkbox"><label for="XL" class="filtro_label">XL</label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </article> -->
-
             <!-------------------------------------------PRODUCTOS------------------------------------------->
 
-            <article class="tienda_productos_article">
+            <article class="tienda_productos_article" id="productos">
                 <div class="tienda-h2_container">
                     <h2>Nuestros Productos</h2>
                 </div>        
@@ -167,17 +129,9 @@
                             <h5 class="product_price">$10.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button class="carrito-button" id="Remera_Denim">
+                            <button onclick="agregarAlCarrito('Remera Denim Brand Roja', 10000)" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
-                            <div class="cantidad_container" id="mostrar_Remera_Denim">
-                                <label for="cant_Remera_Denim" class="cantidad_label">Cantidad:</label>
-                                <select class="select_options" id="cant_Remera_Denim">
-                                    <option value="1" class="number_option">1</option>
-                                    <option value="2" class="number_option">2</option>
-                                    <option value="3" class="number_option">3</option>
-                                </select>
-                            </div>
                         </div>
                     </div>
                     <div class="tienda_producto_container">
@@ -210,17 +164,9 @@
                             <h5 class="product_price">$13.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button class="carrito-button" id="Remera_Polo">
+                            <button onclick="agregarAlCarrito('Remera Polo Azul', 13000)" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
-                            <div class="cantidad_container" id="mostrar_Remera_Polo">
-                                <label for="cant_Remera_Polo" class="cantidad_label">Cantidad:</label>
-                                <select class="select_options" id="cant_Remera_Polo">
-                                    <option value="1" class="number_option">1</option>
-                                    <option value="2" class="number_option">2</option>
-                                    <option value="3" class="number_option">3</option>
-                                </select>
-                            </div>
                         </div>
                     </div>
                     <div class="tienda_producto_container">
@@ -253,17 +199,10 @@
                             <h5 class="product_price">$10.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button class="carrito-button" id="Remera_Quick">
+                            <button onclick="agregarAlCarrito('Remera Quicksilver Negra', 10000)" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
-                            <div class="cantidad_container" id="mostrar_Remera_Quick">
-                                <label for="cant_Remera_Quick" class="cantidad_label">Cantidad:</label>
-                                <select class="select_options" id="cant_Remera_Quick">
-                                    <option value="1" class="number_option">1</option>
-                                    <option value="2" class="number_option">2</option>
-                                    <option value="3" class="number_option">3</option>
-                                </select>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -298,17 +237,9 @@
                             <h5 class="product_price">$15.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button class="carrito-button" id="Remera_Adidas">
+                            <button onclick="agregarAlCarrito('Remera Adidas Azul', 15000)" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
-                            <div class="cantidad_container" id="mostrar_Remera_Adidas">
-                                <label for="cant_Remera_Adidas" class="cantidad_label">Cantidad:</label>
-                                <select class="select_options" id="cant_Remera_Adidas">
-                                    <option value="1" class="number_option">1</option>
-                                    <option value="2" class="number_option">2</option>
-                                    <option value="3" class="number_option">3</option>
-                                </select>
-                            </div>
                         </div>
                     </div>
                     <div class="tienda_producto_container">
@@ -341,17 +272,9 @@
                             <h5 class="product_price">$17.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button class="carrito-button" id="Pantalon_Jean1">
+                            <button onclick="agregarAlCarrito('Pantalón de Jean Azul', 17000)" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
-                            <div class="cantidad_container" id="mostrar_Pantalon_Jean1">
-                                <label for="cant_Pantalon_Jean1" class="cantidad_label">Cantidad:</label>
-                                <select class="select_options" id="cant_Pantalon_Jean1">
-                                    <option value="1" class="number_option">1</option>
-                                    <option value="2" class="number_option">2</option>
-                                    <option value="3" class="number_option">3</option>
-                                </select>
-                            </div>
                         </div>
                     </div>
                     <div class="tienda_producto_container">
@@ -384,17 +307,9 @@
                             <h5 class="product_price">$16.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button class="carrito-button" id="Pantalon_Jean2">
+                            <button onclick="agregarAlCarrito('Pantalón Jogger Beige', 16000)" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
-                            <div class="cantidad_container" id="mostrar_Pantalon_Jean2">
-                                <label for="cant_Pantalon_Jean2" class="cantidad_label">Cantidad:</label>
-                                <select class="select_options" id="cant_Pantalon_Jean2">
-                                    <option value="1" class="number_option">1</option>
-                                    <option value="2" class="number_option">2</option>
-                                    <option value="3" class="number_option">3</option>
-                                </select>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -429,17 +344,9 @@
                             <h5 class="product_price">$10.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button class="carrito-button" id="Pantalon_Jean3">
+                            <button onclick="agregarAlCarrito('Pantalón de Jean Azul', 10000)" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
-                            <div class="cantidad_container" id="mostrar_Pantalon_Jean3">
-                                <label for="cant_Pantalon_Jean3" class="cantidad_label">Cantidad:</label>
-                                <select class="select_options" id="cant_Pantalon_Jean3">
-                                    <option value="1" class="number_option">1</option>
-                                    <option value="2" class="number_option">2</option>
-                                    <option value="3" class="number_option">3</option>
-                                </select>
-                            </div>
                         </div>
                     </div>
                     <div class="tienda_producto_container">
@@ -457,17 +364,9 @@
                             <h5 class="product_price">$5.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button class="carrito-button" id="Gorro_Negro">
+                            <button onclick="agregarAlCarrito('Gorro de Invierno Negro', 5000)" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
-                            <div class="cantidad_container" id="mostrar_Gorro_Negro">
-                                <label for="cant_Gorro_Negro" class="cantidad_label">Cantidad:</label>
-                                <select class="select_options" id="cant_Gorro_Negro">
-                                    <option value="1" class="number_option">1</option>
-                                    <option value="2" class="number_option">2</option>
-                                    <option value="3" class="number_option">3</option>
-                                </select>
-                            </div>
                         </div>
                     </div>
                     <div class="tienda_producto_container">
@@ -485,17 +384,9 @@
                             <h5 class="product_price">$5.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button class="carrito-button" id="Gorro_Rosa">
+                            <button onclick="agregarAlCarrito('Gorro Pura Vida Rosa', 5000)" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
-                            <div class="cantidad_container" id="mostrar_Gorro_Rosa">
-                                <label for="cant_Gorro_Rosa" class="cantidad_label">Cantidad:</label>
-                                <select class="select_options" id="cant_Gorro_Rosa">
-                                    <option value="1" class="number_option">1</option>
-                                    <option value="2" class="number_option">2</option>
-                                    <option value="3" class="number_option">3</option>
-                                </select>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -530,17 +421,9 @@
                             <h5 class="product_price">$14.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button class="carrito-button" id="Campera_Rosa">
+                            <button onclick="agregarAlCarrito('Campera Rosa', 14000)" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
-                            <div class="cantidad_container" id="mostrar_Campera_Rosa">
-                                <label for="cant_Campera_Rosa" class="cantidad_label">Cantidad:</label>
-                                <select class="select_options" id="cant_Campera_Rosa">
-                                    <option value="1" class="number_option">1</option>
-                                    <option value="2" class="number_option">2</option>
-                                    <option value="3" class="number_option">3</option>
-                                </select>
-                            </div>
                         </div>
                     </div>
                     <div class="tienda_producto_container">
@@ -573,17 +456,9 @@
                             <h5 class="product_price">$17.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button class="carrito-button" id="Buzo_Vans">
+                            <button onclick="agregarAlCarrito('Buzo Vans Rojo', 17000)" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
-                            <div class="cantidad_container" id="mostrar_Buzo_Vans">
-                                <label for="cant_Buzo_Vans" class="cantidad_label">Cantidad:</label>
-                                <select class="select_options" id="cant_Buzo_Vans">
-                                    <option value="1" class="number_option">1</option>
-                                    <option value="2" class="number_option">2</option>
-                                    <option value="3" class="number_option">3</option>
-                                </select>
-                            </div>
                         </div>
                     </div>
                     <div class="tienda_producto_container">
@@ -616,22 +491,16 @@
                             <h5 class="product_price">$17.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button class="carrito-button" id="Buzo_Nb">
+                            <button onclick="agregarAlCarrito('Buzo New Balance Gris', 17000)" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
-                            <div class="cantidad_container" id="mostrar_Buzo_Nb">
-                                <label for="cant_Buzo_Nb" class="cantidad_label">Cantidad:</label>
-                                <select class="select_options" id="cant_Buzo_Nb">
-                                    <option value="1" class="number_option">1</option>
-                                    <option value="2" class="number_option">2</option>
-                                    <option value="3" class="number_option">3</option>
-                                </select>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </article>
         </section>
+
     </main>
 
     <!-------------------------------------------FOOTER------------------------------------------->
@@ -666,6 +535,11 @@
                     <div>
                         <a href="https://www.flaticon.es/iconos-gratis/flecha-hacia-abajo" title="flecha hacia abajo iconos">
                             <img src="../img/flecha_recta.png" alt="Flecha Señalando Abajo Recta" class="footer-icon">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.flaticon.es/iconos-gratis/cerca" title="cerca iconos">
+                            <img src="../img/cerrar.png" alt="Cruz para Cerrar el Carrito" class="footer-icon">
                         </a>
                     </div>
                 </div>
