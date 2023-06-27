@@ -1,3 +1,27 @@
+// MENU RESPONSIVE --------------------------------------------------------------------------------------------------------------------------------------------------
+const nav = document.querySelector("#nav");
+const menu = document.querySelector("#menu");
+const abrir_menu = document.querySelector("#abrir_menu");
+const cerrar_menu = document.querySelector("#cerrar_menu");
+
+abrir_menu.addEventListener("click", () => {
+    abrir_menu.classList.add("ocultar");
+    abrir_menu.classList.remove ("mostrar", "visible");
+    cerrar_menu.classList.add("mostrar", "visible");
+    nav.classList.add("h-40rem");
+    menu.classList.add("visible");
+    menu.classList.remove("ocultar");
+})
+
+cerrar_menu.addEventListener("click", () => {
+    cerrar_menu.classList.add("ocultar");
+    cerrar_menu.classList.remove("mostrar", "visible");
+    abrir_menu.classList.add("mostrar", "visible");
+    menu.classList.remove("visible");
+    menu.classList.add("ocultar");
+    nav.classList.remove("h-40rem");
+})
+
 // FUNCIONAMIENTO PARA ABRIR Y CERRAR EL CARRITO --------------------------------------------------------------------------------------------------------------------
 
 const carrito = document.querySelector("#carrito");
@@ -6,10 +30,12 @@ const cerrar = document.querySelector("#cerrar");
 
 abrir.addEventListener("click", () => {
     carrito.classList.add("visible");
+    carrito.classList.add("carrito_responsive");
 })
 
 cerrar.addEventListener("click", () => {
     carrito.classList.remove("visible");
+    carrito.classList.remove("carrito_responsive");
 })
 
 // FUNCIONAMIENTO DEL CARRITO ----------------------------------------------------------------------------------------------------------------------------------------

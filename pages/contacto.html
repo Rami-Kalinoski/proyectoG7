@@ -29,8 +29,20 @@
             </a>
         </div>
     </header>
-    <nav>
-        <ul class="ul-nav">
+    <nav id="nav">
+        <div class="nav-botontes_container">
+            <button class="abrir_menu" id="abrir_menu">
+                <div class="burger">
+                    <img src="../img/menu.png" alt="Menu Hamburguesa" class="menu-img">
+                </div>
+            </button>
+            <button class="cerrar_menu" id="cerrar_menu">
+                <div class="burger">
+                    <img src="../img/cerrar.png" alt="Cruz para Cerrar Menu" class="menu-img">
+                </div>
+            </button>
+        </div>
+        <ul id="menu" class="ul-nav">
             <li class="nav_li">
                 <a href="./tienda.html" class="nav-link">Tienda</a>
             </li>
@@ -76,10 +88,10 @@
                         <div class="label_container">
                             <label for="motivo" class="form-label">Motivo</label>
                             <p class="form-buttons_container">
-                                <a class="btn btn-primary form_button" data-bs-toggle="collapse" href="#unirse-collapse" role="button" aria-expanded="false" aria-controls="unirse-collapse">
+                                <a class="btn btn-primary form_button" data-bs-toggle="collapse" href="#unirse-collapse" role="button" aria-expanded="false" aria-controls="unirse-collapse" id="form_button">
                                     Unirse
                                 </a>
-                                <button class="btn btn-primary form_button" type="button" data-bs-toggle="collapse" data-bs-target="#opinion-collapse" aria-expanded="false" aria-controls="opinion-collapse">
+                                <button class="btn btn-primary form_button" type="button" data-bs-toggle="collapse" data-bs-target="#opinion-collapse" aria-expanded="false" aria-controls="opinion-collapse" id="form_button">
                                     Opinion
                                 </button>
                             </p>
@@ -87,7 +99,7 @@
                                 <div class="card card-body">
                                     <div class="unirse_container">
                                         <label for="email2" class="subform-label">E-mail</label>
-                                        <input type="email" name="email2" id="email2" placeholder="Ingrese el e-mail que utilizará como vendedor" class="subform_input">
+                                        <input type="email" name="email2" id="email2" placeholder="E-mail que utilizará como vendedor" class="subform_input">
                                     </div>
                                     <div class="unirse_container">
                                         <label for="ofrece" class="subform-label">Productos Ofrecidos</label>
@@ -156,6 +168,11 @@
                             <img src="../img/cerrar.png" alt="Cruz para Cerrar el Carrito" class="footer-icon">
                         </a>
                     </div>
+                    <div>
+                        <a href="https://www.flaticon.es/iconos-gratis/barras-horizontales" title="barras horizontales iconos">
+                            <img src="../img/menu.png" alt="Menu Hamburguesa" class="footer-icon">
+                        </a>
+                    </div>
                 </div>
             </article>
         </section>
@@ -165,7 +182,7 @@
                     <h6 class="footer-h6">Atención: esto es un trabajo universitario</h6>
                 </div>
                 <div>
-                    <p>Tanto esta página como la información que mostramos en ella son parte de un trabajo universitario de la materia “Diseño y Desrrollo Web” en la Universidad Argentina De la Empresa (UADE). Por lo tanto, tenga en cuenta que <b class="footer-b">este es un proyecto y tienda ficticios</b>.</p>
+                    <p>Tanto esta página como la información que mostramos en ella son parte de un trabajo universitario de la materia “Diseño y Desrrollo Web” en la <a href="https://www.uade.edu.ar/" class="link-uade_footer">Universidad Argentina De la Empresa (UADE)</a>. Por lo tanto, tenga en cuenta que <b class="footer-b">este es un proyecto y tienda ficticios</b>.</p>
                 </div>
             </article>
         </section>
