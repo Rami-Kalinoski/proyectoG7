@@ -41,6 +41,12 @@
                     <img src="../img/cerrar.png" alt="Cruz para Cerrar Menu" class="menu-img">
                 </div>
             </button>
+            <button class="carrito_button-rp" id="abrir-rp">
+                <img src="../img/carrito.png" alt="Imagen del Carrito" class="carrito">
+                <div class="carrito-cont_div">
+                    <span id="carrito-cont-rp"" class="carrito-cont"> 0 </span>
+                </div>
+            </button>
         </div>
         <ul id="menu" class="ul-nav">
             <li class="nav_li actual_link">
@@ -52,40 +58,50 @@
             <li class="nav_li">
                 <a href="./contacto.html" class="nav-link">Contacto</a>
             </li>
+            <li id="carrito-li" class="carrito-li">
+                <button class="carrito_button" id="abrir">
+                    <img src="../img/carrito.png" alt="Imagen del Carrito" class="carrito">
+                    <div class="carrito-cont_div">
+                        <span id="carrito-cont"" class="carrito-cont"> 0 </span>
+                    </div>
+                </button>
+            </li>
         </ul>
     </nav>
 
     <!-------------------------------------------SECCIÓN DEL CARRITO------------------------------------------->
 
     <section class="carrito_section" id="carrito">
-        <article class="cerrarYh3-carrito_container">
-            <div class="h3-carrito_div">
-                <h3>Carrito</h3>
-            </div>
-            <div>
-                <button class="cerrar-carrito_button"  id="cerrar">
-                    <img src="../img/cerrar.png" alt="Botón para Cerrar el Carrito" class="cruz_cerrar-img">
+        <div class="carrito_section_div">
+            <article class="cerrarYh3-carrito_container">
+                <div class="h3-carrito_div">
+                    <h3>Carrito</h3>
+                </div>
+                <div>
+                    <button class="cerrar-carrito_button"  id="cerrar">
+                        <img src="../img/cerrar.png" alt="Botón para Cerrar el Carrito" class="cruz_cerrar-img">
+                    </button>
+                </div>
+            </article>
+            <article class="ul-carrito_container">
+                <ul id="carrito-items">
+    
+                </ul>
+            </article>
+            <article class="carrito-total_container">
+                <p class="total-p">
+                    Total: $ <span id="carrito-total"> 0 </span>
+                </p>
+            </article>
+            <article class="vaciar-carrito_button_container">
+                <button onclick="comprar()" class="comprar-carrito_button">
+                    <p>Reservar</p>
                 </button>
-            </div>
-        </article>
-        <article class="ul-carrito_container">
-            <ul id="carrito-items">
-
-            </ul>
-        </article>
-        <article class="carrito-total_container">
-            <p class="total-p">
-                Total: $ <span id="carrito-total"> 0 </span>
-            </p>
-        </article>
-        <article class="vaciar-carrito_button_container">
-            <button onclick="comprar()" class="comprar-carrito_button">
-                <p>Comprar</p>
-            </button>
-            <button onclick="vaciarCarrito()" class="vaciar-carrito_button">
-                <p>Vaciar carrito</p>
-            </button>
-        </article>
+                <button onclick="vaciarCarrito()" class="vaciar-carrito_button">
+                    <p>Vaciar carrito</p>
+                </button>
+            </article>
+        </div>
     </section>
 
     <main>
@@ -98,9 +114,6 @@
                     <a href="../index.html" class="mapa-link">Inicio</a> > <a href="./tienda.html" class="mapa-link">Tienda</a>
                 </p>
             </article>
-            <button class="carrito_button" id="abrir">
-                <img src="../img/carrito.png" alt="Imagen del Carrito" class="carrito">
-            </button>
         </section>
         <section class="tienda_main-section">
 
@@ -141,7 +154,7 @@
                             <h5 class="product_price">$10.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button onclick="agregarAlCarrito('Remera Denim Brand Roja', 10000)" class="carrito-button">
+                            <button onclick="agregarAlCarrito('Remera Denim Brand Roja', 10000, '../img/products/remera_denim-bordo1.jpeg')" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
                         </div>
@@ -176,7 +189,7 @@
                             <h5 class="product_price">$13.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button onclick="agregarAlCarrito('Remera Polo Azul', 13000)" class="carrito-button">
+                            <button onclick="agregarAlCarrito('Remera Polo Azul', 13000, '../img/products/remera_polo-azul1.jpeg')" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
                         </div>
@@ -211,7 +224,7 @@
                             <h5 class="product_price">$10.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button onclick="agregarAlCarrito('Remera Quicksilver Negra', 10000)" class="carrito-button">
+                            <button onclick="agregarAlCarrito('Remera Quicksilver Negra', 10000, '../img/products/remera_quick-negra1.jpeg')" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
 
@@ -249,7 +262,7 @@
                             <h5 class="product_price">$15.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button onclick="agregarAlCarrito('Remera Adidas Azul', 15000)" class="carrito-button">
+                            <button onclick="agregarAlCarrito('Remera Adidas Azul', 15000, '../img/products/remera_adidas-azul1.jpeg')" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
                         </div>
@@ -284,7 +297,7 @@
                             <h5 class="product_price">$17.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button onclick="agregarAlCarrito('Pantalón de Jean Azul', 17000)" class="carrito-button">
+                            <button onclick="agregarAlCarrito('Pantalón de Jean Azul', 17000, '../img/products/pantalon_jean-azul1.jpeg')" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
                         </div>
@@ -319,7 +332,7 @@
                             <h5 class="product_price">$16.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button onclick="agregarAlCarrito('Pantalón Jogger Beige', 16000)" class="carrito-button">
+                            <button onclick="agregarAlCarrito('Pantalón Jogger Beige', 16000, '../img/products/pantalon_jogger-beige1.jpeg')" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
                         </div>
@@ -356,7 +369,7 @@
                             <h5 class="product_price">$10.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button onclick="agregarAlCarrito('Pantalón de Jean Azul', 10000)" class="carrito-button">
+                            <button onclick="agregarAlCarrito('Pantalón de Jean Azul', 10000, '../img/products/pantalon_jean-bordo1.jpeg')" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
                         </div>
@@ -376,7 +389,7 @@
                             <h5 class="product_price">$5.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button onclick="agregarAlCarrito('Gorro de Invierno Negro', 5000)" class="carrito-button">
+                            <button onclick="agregarAlCarrito('Gorro de Invierno Negro', 5000, '../img/products/gorro_negro.jpeg')" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
                         </div>
@@ -396,7 +409,7 @@
                             <h5 class="product_price">$5.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button onclick="agregarAlCarrito('Gorro Pura Vida Rosa', 5000)" class="carrito-button">
+                            <button onclick="agregarAlCarrito('Gorro Pura Vida Rosa', 5000, '../img/products/gorro_rosa.jpeg')" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
                         </div>
@@ -433,7 +446,7 @@
                             <h5 class="product_price">$14.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button onclick="agregarAlCarrito('Campera Rosa', 14000)" class="carrito-button">
+                            <button onclick="agregarAlCarrito('Campera Rosa', 14000, '../img/products/buzo_rosa1.jpeg')" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
                         </div>
@@ -468,7 +481,7 @@
                             <h5 class="product_price">$17.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button onclick="agregarAlCarrito('Buzo Vans Rojo', 17000)" class="carrito-button">
+                            <button onclick="agregarAlCarrito('Buzo Vans Rojo', 17000, '../img/products/buzo_vans-rojo1.jpeg')" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
                         </div>
@@ -503,7 +516,7 @@
                             <h5 class="product_price">$17.000</h5>
                         </div>
                         <div class="carrito-button_container">
-                            <button onclick="agregarAlCarrito('Buzo New Balance Gris', 17000)" class="carrito-button">
+                            <button onclick="agregarAlCarrito('Buzo New Balance Gris', 17000, '../img/products/buzo_nb-gris1.jpeg')" class="carrito-button">
                                 <p class="carrito-button_text">Agregar al Carrito</p>
                             </button>
 
